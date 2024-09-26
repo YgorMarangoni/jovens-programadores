@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url(hero.css);
+@import url(inovacao.css);
+@import url(cursos.css);
+@import url(missao.css);
+@import url(parceiros.css);
+@import url(galeria.css);
+@import url(instagram.css);
+@import url(footer.css);
+@import url(menu.css);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: #f7f7f7;
+}
+header {
+  padding: 0px 20px;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  top: 0px;
+  z-index: 20;
+}
+.logo {
+  position: relative;
+  top: 5px;
+}
+header .content {
+  max-width: 1440px;
+  width: 100%;
+  border-radius: 15px;
+  background: linear-gradient(
+    270deg,
+    rgba(35, 63, 61, 0.9) 0%,
+    rgba(27, 67, 64, 0.9) 100%
+  );
+  box-shadow: 0px 2px 4px 0px rgba(3, 2, 15, 0.15);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto;
+  padding: 20px 100px;
+
+  nav {
+    display: flex;
+    gap: 20px;
+    a {
+      text-decoration: none;
+      color: #f3f6f7;
+      font-family: Sora;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.3px;
+      transition: 0.1s ease-in-out all;
+    }
+
+    a.active,
+    a:hover {
+      color: #7cc7c7;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header .content {
+    margin: 30px auto;
+    padding: 20px;
+    justify-content: space-between;
+    nav {
+      display: none;
+    }
+  }
+
+  #nav-icon {
+    display: block;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+  .menu-mobile.open {
+    opacity: 1;
+    transform: scaleY(1);
+    a {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+}

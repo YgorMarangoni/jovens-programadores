@@ -1,0 +1,61 @@
+.parcerias {
+  padding: 0 20px;
+  margin-top: 160px;
+  .content {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    h2 {
+      font-size: 32px;
+      color: #274443;
+    }
+
+    .marcas {
+      width: 100%;
+      min-height: 151px;
+      background-color: #fcfdff;
+      display: flex;
+      margin-top: 40px;
+      border-radius: 15px;
+
+      .marca {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid #e7eced;
+        img {
+          max-height: 81px;
+          min-height: 81px;
+        }
+      }
+      .marca:nth-last-child(1) {
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .parcerias {
+    margin-top: 120px;
+    .content {
+      h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+      .marcas {
+        flex-direction: column;
+        padding: 0px;
+        .marca {
+          border-bottom: 2px solid #e7eced;
+          padding: 35px 0;
+          border-right: none;
+        }
+        .marca:nth-last-child(1) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

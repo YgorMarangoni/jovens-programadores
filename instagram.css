@@ -1,0 +1,48 @@
+.instagram {
+  padding: 0 20px;
+  min-height: 280px;
+  background: linear-gradient(180deg, #f7f7f7 36.4%, #e3f0ef 97.77%);
+  display: grid;
+  place-items: center;
+  align-items: center;
+  .content {
+    max-width: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -5px;
+    h2 {
+      text-align: center;
+      color: #274443;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      gap: 5px;
+      p {
+        color: #274443;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .instagram {
+    .content {
+      h2 {
+        font-size: 28px;
+      }
+
+      div {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

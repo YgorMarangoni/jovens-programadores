@@ -1,0 +1,158 @@
+.missao {
+  padding: 0px 20px;
+  margin-top: 160px;
+  background: linear-gradient(180deg, #c6e8e8 0%, #b3dcdc 100%);
+  min-height: 455px;
+  .content {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    .missao-img {
+      img {
+        position: absolute;
+        top: -40px;
+        border-radius: 20px;
+        border: 2px solid #274443;
+        height: calc(100% + 80px);
+      }
+    }
+
+    .missao-txt {
+      padding: 40px 0px;
+
+      h2 {
+        font-size: 32px;
+        color: #274443;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #274443;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .missao-bonus {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        div.certificado {
+          display: flex;
+          align-items: center;
+          border-radius: 8px;
+          background: #f7f7f7;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+          flex: 1;
+          padding: 20px;
+          gap: 15px;
+
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        div.tempo-curso {
+          display: flex;
+          align-items: center;
+          border-radius: 8px;
+          background: #274443;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+          flex: 1;
+          padding: 20px;
+          gap: 15px;
+
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #f7f7f7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1206px) {
+  .missao {
+    padding-bottom: 60px;
+    .content {
+      .missao-txt {
+        padding: 40px 0px 40px 20px;
+        margin-left: 40px;
+        .missao-bonus {
+          div.certificado {
+            h3 {
+              font-size: 18px;
+            }
+          }
+          div.tempo-curso {
+            h3 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .missao {
+    .content {
+      display: flex;
+      flex-direction: column;
+      .missao-img {
+        img {
+          position: relative;
+          border-radius: 20px;
+          border: 2px solid #274443;
+          height: calc(450px);
+        }
+      }
+      .missao-txt {
+        padding: 0px;
+        margin-left: 0px;
+
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .missao {
+    .content {
+      .missao-img {
+        display: flex;
+        justify-content: center;
+        img {
+          position: relative;
+          border-radius: 20px;
+          border: 2px solid #274443;
+          height: auto;
+          width: 100%;
+        }
+      }
+      .missao-txt {
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .missao-bonus {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
